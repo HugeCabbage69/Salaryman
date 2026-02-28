@@ -51,10 +51,9 @@ public class TopDownPlayerController : MonoBehaviour
             );
         }
 
-        // Apply gravity so we stay grounded
         if (controller.isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -0.2f;
         }
 
         velocity.y += gravity * Time.deltaTime;
