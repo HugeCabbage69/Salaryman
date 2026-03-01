@@ -11,8 +11,8 @@
     {
       "login": "HugeCabbage69",
       "name": "Huge Cabbage",
-      "avatar_url": "https://avatars.githubusercontent.com/u/139630387&v=4",
-      "profile": "https://https://github.com/HugeCabbage69",
+      "avatar_url": "https://avatars.githubusercontent.com/u/139630387?v=4",
+      "profile": "https://github.com/HugeCabbage69",
       "contributions": [
         "code",
         "design",
@@ -39,7 +39,7 @@
     {
       "login": "Akshat0021",
       "name": "Akshat21",
-      "avatar_url": "https://avatars.githubusercontent.com/u/128487278v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128487278?v=4",
       "profile": "https://github.com/Akshat0021",
       "contributions": [
         "music",
@@ -47,7 +47,7 @@
         "projectManagement",
         "review"
       ]
-    }],
-
+    }
+  ],
   "repoType": "github"
 }
