@@ -14,9 +14,10 @@ And of course Salaryman is open source with a [public repository](https://github
 | --- | ---- |
 | W | Moves character Forward |
 | A | Moves character Left |
-|S | To Moves characterForward |
+|S | To Moves character Backwards |
 |D |Move right
 |F | Interacts with the object|
+|1-9| To send people to respective floor|
 
 ### Interactions
 - Interact with the music box to play and pause the lo-fi music 🎵
