@@ -31,7 +31,7 @@ And of course Salaryman is open source with a [public repository](https://github
 
 
 ### Contributors
-![All Contributors](https://img.shields.io/github/all-contributors/projectOwner/projectName?color=b3b3d1&style=for-the-badge)
+![All Contributors](https://img.shields.io/github/all-contributors/HugeCabbage69/Salaryman?color=b3b3d1&style=for-the-badge)
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
