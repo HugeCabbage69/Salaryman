@@ -9,7 +9,7 @@ public class Dialogues : MonoBehaviour
 
     void Start()
     {
-        dialogues.Add(("God is a lie.", 1.0f, 6));
+        dialogues.Add(("God is a lie.", 0.5f, 6));
         dialogues.Add(("It was just sex.", 0.5f, 2));
         dialogues.Add(("He trusted me. That's why I won.", 0.5f, 9));
         dialogues.Add(("I only told them where he was hiding.", 0.5f, 9));
