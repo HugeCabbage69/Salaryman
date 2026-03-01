@@ -4408,6 +4408,7 @@ GameObject:
   - component: {fileID: 878827588}
   - component: {fileID: 878827590}
   - component: {fileID: 878827589}
+  - component: {fileID: 878827591}
   m_Layer: 5
   m_Name: BookUI
   m_TagString: Untagged
@@ -4476,6 +4477,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878827587}
   m_CullTransparentMesh: 1
+--- !u!114 &878827591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878827587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38c544911ca87141b867a253c14f4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeedsUIUpdater
+  goodText1: {fileID: 1648359182}
+  goodText2: {fileID: 1328950561}
+  goodText3: {fileID: 1607680334}
+  badText1: {fileID: 2116148793}
+  badText2: {fileID: 1243408132}
+  badText3: {fileID: 849627709}
 --- !u!1 &886989571
 GameObject:
   m_ObjectHideFlags: 0
@@ -9948,6 +9967,7 @@ GameObject:
   - component: {fileID: 2032668107}
   - component: {fileID: 2032668108}
   - component: {fileID: 2032668109}
+  - component: {fileID: 2032668110}
   m_Layer: 0
   m_Name: Spirit
   m_TagString: Untagged
@@ -10003,6 +10023,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogues
   digStr: 
   diglvl: 0
+--- !u!114 &2032668110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032668106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f99641a76bf6b45b8808e4579cf44f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Deeeds
+  goodDeedsPool: []
+  badDeedsPool: []
+  selectedGoodDeeds:
+  - deed: 
+    weight: 0
+  - deed: 
+    weight: 0
+  - deed: 
+    weight: 0
+  selectedBadDeeds:
+  - deed: 
+    lvl: 0
+    weight: 0
+  - deed: 
+    lvl: 0
+    weight: 0
+  - deed: 
+    lvl: 0
+    weight: 0
 --- !u!1 &2034182275
 GameObject:
   m_ObjectHideFlags: 0
