@@ -30,3 +30,13 @@ And of course Salaryman is open source with a [public repository](https://github
 - [Lift Sound](https://drive.google.com/file/d/1UYHdrynjd6nTYbvy7prZoxYaRqfdHeyX/view?usp=drive_link)
 
 
+### Contributors
+![All Contributors](https://img.shields.io/github/all-contributors/projectOwner/projectName?color=b3b3d1&style=for-the-badge)
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
