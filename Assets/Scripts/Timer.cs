@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -44,5 +45,7 @@ public class Timer : MonoBehaviour
 
         Debug.Log("Time's up! The player died.");
         Debug.Log("Total Time Alive: " + Mathf.Round(totalTimeAlive) + " seconds.");
+
+        SceneManager.LoadScene("mainMenu");
     }
 }
