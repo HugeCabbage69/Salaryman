@@ -4,12 +4,14 @@ public class TriggerHighlighter : MonoBehaviour
 {
 
     public MeshRenderer mesh;
+    public bool isIn = false;
 
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             mesh.enabled = true;
+            isIn = true;
         }
     }
 
@@ -18,6 +20,7 @@ public class TriggerHighlighter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             mesh.enabled = false;
+            isIn = false;
         }
     }
 
