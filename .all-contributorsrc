@@ -1,0 +1,53 @@
+{
+  "projectName": "Salaryman",
+  "projectOwner": "HugeCabbage69",
+  "commitConvention": "eslint",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "HugeCabbage69",
+      "name": "Huge Cabbage",
+      "avatar_url": "https://avatars.githubusercontent.com/u/139630387&v=4",
+      "profile": "https://https://github.com/HugeCabbage69",
+      "contributions": [
+        "code",
+        "design",
+        "bug",
+        "maintenance",
+        "projectManagement",
+        "review",
+        "tool"
+      ]
+    },
+    {
+      "login": "keshavv1729",
+      "name": "Keshav Bansal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/230175838?v=4",
+      "profile": "https://github.com/keshavv1729",
+      "contributions": [
+        "code",
+        "bug",
+        "maintenance",
+        "projectManagement",
+        "review"
+      ]
+    },
+    {
+      "login": "Akshat0021",
+      "name": "Akshat21",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128487278v=4",
+      "profile": "https://github.com/Akshat0021",
+      "contributions": [
+        "music",
+        "maintenance",
+        "projectManagement",
+        "review"
+      ]
+    },
+
+  "repoType": "github"
+}
