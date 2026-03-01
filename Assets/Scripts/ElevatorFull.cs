@@ -1,43 +1,73 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ElevatorFull : MonoBehaviour
 {
     public ElevatorTrigger elevatorTrigger;
-    public Dialogues dialogues;
-    public PickupFollower pickupFollower;
 
-    public GameObject spirit;
+    private Dialogues dialogues;
+    private PickupFollower pickupFollower;
+    private Deeeds deedsSystem;
 
-    public int correctLevel1;
-    public int correctLevel2;
-    public int correctLevel3;
-    public int correctLevel4;
+    private GameObject spirit;
+
+    public int correctLevel1; // dialogue level
+    public int correctLevel2; // bad deed 1
+    public int correctLevel3; // bad deed 2
+    public int correctLevel4; // bad deed 3
 
     private int alphaCode;
 
-    void Start()
+    void Update()
     {
-        // Cache references once
+        // --- AUTO FIND REFERENCES IF DESTROYED ---
         if (dialogues == null)
             dialogues = FindObjectOfType<Dialogues>();
 
         if (pickupFollower == null)
             pickupFollower = FindObjectOfType<PickupFollower>();
 
+        if (deedsSystem == null)
+            deedsSystem = FindObjectOfType<Deeeds>();
+
         if (spirit == null)
             spirit = GameObject.Find("Spirit");
-    }
 
-    void Update()
-    {
+
+        // --- SAFETY CHECK ---
+        if (pickupFollower == null || dialogues == null)
+            return;
+
         if (!pickupFollower.isFollowing)
             return;
 
-        if (elevatorTrigger.IsOnCooldown)
+        if (elevatorTrigger != null && elevatorTrigger.IsOnCooldown)
             return;
+
+        // --- UPDATE CORRECT LEVELS FROM DEEDS ---
+        UpdateCorrectLevels();
 
         HandleInput();
     }
+
+
+    void UpdateCorrectLevels()
+    {
+        correctLevel1 = dialogues.diglvl;
+
+        if (deedsSystem == null)
+            return;
+
+        List<BadDeed> bad = deedsSystem.selectedBadDeeds;
+
+        if (bad.Count >= 3)
+        {
+            correctLevel2 = bad[0].lvl;
+            correctLevel3 = bad[1].lvl;
+            correctLevel4 = bad[2].lvl;
+        }
+    }
+
 
     void HandleInput()
     {
@@ -52,15 +82,17 @@ public class ElevatorFull : MonoBehaviour
         }
     }
 
+
     void ProcessCode()
     {
         if (spirit != null)
+        {
             Destroy(spirit);
+            spirit = null; // force re-find later if needed
+        }
 
-        elevatorTrigger.StartCooldown(alphaCode);
-
-        int dialogueLevel = dialogues.diglvl;
-        correctLevel1 = dialogueLevel;
+        if (elevatorTrigger != null)
+            elevatorTrigger.StartCooldown(alphaCode);
 
         if (alphaCode == correctLevel1 ||
             alphaCode == correctLevel2 ||

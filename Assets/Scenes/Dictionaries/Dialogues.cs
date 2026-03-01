@@ -38,6 +38,11 @@ public class Dialogues : MonoBehaviour
         dialogues.Add(("I loved money more.", 0.5f, 4));
         dialogues.Add(("Truth is whatever works.", 0.5f, 8));
         dialogues.Add(("He begged. I laughed.", 0.5f, 7));
+
+        var dig = GetDialogue();
+        digStr = dig.dialogue;
+        diglvl = dig.level;
+        Debug.Log($"Level {diglvl}: {digStr}");
     }
 
     
@@ -72,9 +77,8 @@ public class Dialogues : MonoBehaviour
         return dialogues[dialogues.Count - 1];
     }
 
-    void onEnable()
+    void OnEnable()
     {
-            
         var dig = GetDialogue();
         digStr = dig.dialogue;
         diglvl = dig.level;
