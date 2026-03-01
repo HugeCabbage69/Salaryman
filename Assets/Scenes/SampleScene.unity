@@ -4406,6 +4406,7 @@ GameObject:
   - component: {fileID: 878827590}
   - component: {fileID: 878827589}
   - component: {fileID: 878827591}
+  - component: {fileID: 878827592}
   m_Layer: 5
   m_Name: BookUI
   m_TagString: Untagged
@@ -4493,6 +4494,20 @@ MonoBehaviour:
   badText1: {fileID: 2116148793}
   badText2: {fileID: 1243408132}
   badText3: {fileID: 849627709}
+--- !u!114 &878827592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878827587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776c4d75d973129459bbee7e0ad6e65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NamePuller
+  bookNameText: {fileID: 1313024322}
+  cardNameText: {fileID: 214198031}
 --- !u!1 &886989571
 GameObject:
   m_ObjectHideFlags: 0
@@ -13001,6 +13016,7 @@ GameObject:
   - component: {fileID: 1476389824105564549}
   - component: {fileID: 7164498207306412630}
   - component: {fileID: 8365484835333998549}
+  - component: {fileID: 8858036365004226031}
   m_Layer: 0
   m_Name: Spirit
   m_TagString: Untagged
@@ -13008,6 +13024,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8858036365004226031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8858036365004226030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2143ba4440d2bae4abb939ea08c5ac83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NameGenerator
+  bookName: 
+  cardName: 
+  areNamesDifferent: 0
 --- !u!33 &8894691112662507598
 MeshFilter:
   m_ObjectHideFlags: 0
