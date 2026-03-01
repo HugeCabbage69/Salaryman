@@ -11,7 +11,7 @@ public class PickupFollower : MonoBehaviour
 
     private Transform player;
     private bool canInteract = false;
-    private bool isFollowing = false;
+    public bool isFollowing = false;
 
     private Vector3 followOffset; // locked offset
 
