@@ -16,10 +16,12 @@ public class ElevatorFull : MonoBehaviour
     public int correctLevel3; // bad deed 2
     public int correctLevel4; // bad deed 3
 
+    public Timer time;
     private int alphaCode;
 
     void Update()
     {
+
         // --- AUTO FIND REFERENCES IF DESTROYED ---
         if (dialogues == null)
             dialogues = FindObjectOfType<Dialogues>();
@@ -85,10 +87,10 @@ public class ElevatorFull : MonoBehaviour
 
     void ProcessCode()
     {
-        if (spirit != null)
+        if (pickupFollower != null)
         {
-            Destroy(spirit);
-            spirit = null; // force re-find later if needed
+            Destroy(pickupFollower.gameObject);
+            pickupFollower = null; // force re-find next frame
         }
 
         if (elevatorTrigger != null)
@@ -100,10 +102,12 @@ public class ElevatorFull : MonoBehaviour
             alphaCode == correctLevel4)
         {
             Debug.Log("Correct code entered. Elevator is now full.");
+            time.timeLeft = time.timeLeft + 10f;
         }
         else
         {
             Debug.Log("Wrong floor selected.");
+            time.timeLeft = time.timeLeft - 20f;
         }
 
         alphaCode = 0;

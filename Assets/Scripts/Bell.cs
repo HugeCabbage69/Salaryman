@@ -15,6 +15,8 @@ public class Bell : MonoBehaviour
     public float cooldownTime = 1.5f;
     private float cooldownTimer = 0f;
 
+    public Timer timer;
+
     void Update()
     {
         // Cooldown timer
@@ -58,6 +60,8 @@ public class Bell : MonoBehaviour
             Debug.LogWarning("No prefab assigned to Bell.");
             return;
         }
+
+        timer.timeLeft += 10f;
 
         Vector3 spawnPos = spawnPoint != null ? spawnPoint.position : transform.position;
 
